@@ -1,0 +1,21 @@
+<div class="card mt-3">
+  <div class="card header">Ajout de Commande</div>
+  <div class="card-body">
+    <div class="form-group">
+      <label>Ref</label>
+      <input type="text" class="form-control" [(ngModel)]="commande.ref">
+    </div>
+    <div class="form-group">
+      <label>Total</label>
+      <input type="number" class="form-control" [(ngModel)]="commande.total">
+    </div>
+    <div class="form-group">
+      <label>Total Payé</label>
+      <input type="number" class="form-control" [(ngModel)]="commande.totalPaye">
+    </div>
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-block btn-primary" (click)="save()">Valider</button>
+  </div>
+</div>
+
